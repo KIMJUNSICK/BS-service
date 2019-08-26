@@ -1,0 +1,14 @@
+{
+  "name": "BS-service",
+  "version": "1.0.0",
+  "description": "Practice Prisma with nomadcoder",
+  "repository": "https://github.com/KIMJUNSICK/BS-service.git",
+  "author": "Kim Jun Sik <jinaganda5@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "generate": "prisma generate",
+    "deploy": "prisma deploy",
+    "prisma": "yarn run deploy && yarn run generate",
+    "start": "nodemon --exec src/index.js"
+  }
+}

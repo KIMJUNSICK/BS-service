@@ -1,0 +1,16 @@
+type User {
+  id: ID! @id
+  userName: String!
+  email: String!
+  firstName: String
+  lastName: String
+  posts: [Post!]!
+}
+
+type Post {
+  id: ID! @id
+  title: String!
+  content: String!
+  views: Int!
+  creator: User!
+}
